@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>9. Caràcters en una frase</h1>
+    <h4>Demana a l’usuari una frase i mostra per consola:</h4>
+    <h5></h5>
+    <script>
+
+let frase_usuario = prompt("Escribe una frase");
+alert("Frase original -> " + frase_usuario);
+alert('nombre caracters -> ' + frase_usuario.length);
+alert('ultimo caracter -> ' +frase_usuario.slice(-1));
+alert("sin espacios -> " + frase_usuario.replaceAll(" ",""));
+alert('Frase en mayuscula -> ' + frase_usuario.toUpperCase());
+alert("La frase " +frase_usuario.replaceAll(" ","") +
+" tiene " + frase_usuario.split(" ").length + " palabras");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>5. Contrasenya secreta</h1>
+
+    <script>
+        const contrasenia_correcta = "javascript2024";
+        let contrasenia = "";
+        do {
+            contrasenia = prompt("introduce contraseña");
+
+            if (contrasenia!=contrasenia_correcta) {
+                alert("Contraseña incorrecta! Vuelve a intentarlo");
+            }
+        } while (contrasenia != contrasenia_correcta);
+        alert("Correcto");
+
+    </script>
+</body>
+</html>

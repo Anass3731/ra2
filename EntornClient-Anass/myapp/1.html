@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1. Avaluació de nota</h1>
+    <script>
+       let nota = parseInt(prompt("Cual es tu nota del 0 al 10?"));
+       
+       if (nota>=0 && nota<5) {
+        alert("Suspès");
+       }
+       else if (nota>=5 && nota<=6.9) {
+        alert("Aprovat");
+       }
+       else if (nota>=7 && nota<=8.9) {
+        alert("Notable");
+       }
+       else if (nota>=9 && nota<=10) {
+        alert("Excel·lent");
+       }
+       else alert("numero no valid solo del 1 al 10");
+
+    </script>
+</body>
+</html>

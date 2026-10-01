@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>9. Pedra, paper o tisora</h1>
+    <script>
+
+let leccion_usuario = prompt("Elige piedra, papel o tijera")
+
+let numeroAleatori = Math.floor(Math.random() * 3) + 1;
+let eleccioPC;
+
+if (numeroAleatori == 1) {
+eleccioPC = "piedra";    
+} else if (numeroAleatori == 2) {
+    eleccioPC = "papel";
+} else if (numeroAleatori == 3) {
+    eleccioPC = "tijera";
+}
+
+alert("pc ha elegido -> " + eleccioPC);
+alert("has elegido " + leccion_usuario);
+alert(`Pc ha elegido ${eleccioPC} y usuario &{leccion_usuario}`);
+
+if (leccion_usuario === eleccioPC) {
+    alert("EMPATE");
+} else if (
+    (leccion_usuario === "piedra" && eleccioPC==="tijera") || 
+    (leccion_usuario === "papel" && eleccioPC==="piedra") ||
+    (leccion_usuario === "tijera" && eleccioPC==="papel")
+)  {
+    alert("has ganado");
+}else alert("has perdido");
+
+
+    </script>
+</body>
+</html>

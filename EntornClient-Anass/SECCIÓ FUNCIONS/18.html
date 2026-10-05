@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>18. Neteja d'strings</h3>
+    <script>
+    const usuaris = [" maria ", "JOAN", "Pere", " lAIA", "julia "];
+
+    function netejaUsuaris(llista){
+        return llista.map(nom => {
+        let limpio = nom.trim(llista).toLowerCase();
+        let nombFinal = limpio[0].toUpperCase() + net.slice(1);
+        return nombFinal;
+    });
+    
+    }
+    console.log(netejaUsuaris);
+
+    </script>
+</body>
+</html>

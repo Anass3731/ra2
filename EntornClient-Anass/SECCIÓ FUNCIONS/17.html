@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>17. Valoració de productes</h4>
+    <script>
+
+        // Escriu una funció tradicional anomenada filtraCars que rep un 
+        // array i retorna només els noms dels productes amb preu superior
+        //  a 20.
+
+
+        const productes = [ { nom: "Ratolí", preu: 15 }, { nom: "Teclat", preu: 30 }, 
+        { nom: "Monitor", preu: 120 }, { nom: "Cable HDMI", preu: 10 } ];
+        
+        // function filtrarcars(lista){
+
+        //     let productosCaros = lista.filter(p => p.preu > 20);
+        //     let nombres = productosCaros.map(p => p.nom);
+
+        //     return nombres;
+        // }
+        
+        // console.log(filtrarcars(productes));
+
+
+
+        // Transforma aquesta funció en una funció anònima assignada a una 
+        // constant.
+    
+
+
+
+    // Transforma-la després en una funció fletxa.
+    const anonima = function(llista){
+            return llista
+            .filter(p=> p.preu > 20)
+            .map(p=> p.nom);
+            
+        };
+        console.log(anonima(productes));
+
+
+
+
+
+
+
+
+
+
+    // const fletxa = (llista) =>{
+    //         return llista
+    //         .filter(p=> p.preu > 20)
+    //         .map(p=> p.nom);
+            
+    //     };
+    //     console.log(fletxa(productes));
+
+
+
+    </script>
+</body>
+</html>

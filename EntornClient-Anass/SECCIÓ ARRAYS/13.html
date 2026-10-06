@@ -14,9 +14,36 @@
     <p>Comprova si alguns costen més de 100 amb .some().</p>
 
     <script>
+        const productes = [ { nom: "Ratolí", preu: 20 }, 
+                            { nom: "Teclat", preu: 35 }, 
+                            { nom: "Monitor", preu: 150 } ];
+
+
+        // let primero = productes.find(p => p.preu > 30);
+        
+        // console.log(primero);
 
 
 
+
+
+        // let todoDiez = productes.every(p => p.preu > 10);
+        // console.log(todoDiez); 
+
+        // if (todoDiez == true) {
+        //     console.log("Todos los productos cuestan más de 10e")
+        // } else console.log("Los productos cuestan menos de 10e")
+    
+    
+    
+        let quienMasCien = productes.some(p => p.preu > 100);
+
+      
+        if (quienMasCien == true) {
+            console.log("Si que hay productos que cuetasn mas de 100e");
+        } else console.log("No hay nigun producto de mas de 100e");
+    
+    
     </script>
 </body>
 </html>

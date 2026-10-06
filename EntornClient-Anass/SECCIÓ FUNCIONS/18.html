@@ -8,17 +8,42 @@
 <body>
     <h3>18. Neteja d'strings</h3>
     <script>
-    const usuaris = [" maria ", "JOAN", "Pere", " lAIA", "julia "];
+   const usuaris = [" maria ", "JOAN", "Pere", " lAIA", "julia "];
 
-    function netejaUsuaris(llista){
-        return llista.map(nom => {
-        let limpio = nom.trim(llista).toLowerCase();
-        let nombFinal = limpio[0].toUpperCase() + net.slice(1);
-        return nombFinal;
-    });
-    
+    function netejaUsuaris(llista) {
+        return llista.map(function(nom) {
+            let limpio = nom.trim().toLowerCase();
+            return limpio[0].toUpperCase() + limpio.slice(1);
+        });
     }
-    console.log(netejaUsuaris);
+
+    console.log(netejaUsuaris(usuaris));
+
+
+    
+const netejaUsuarisAnonima = function(llista) {
+    return llista.map(function(nom) {
+        let limpio = nom.trim().toLowerCase();
+        return limpio[0].toUpperCase() + limpio.slice(1);
+    });
+};
+
+console.log(netejaUsuarisAnonima(usuaris));
+
+
+
+
+
+const netejarNom = nom => nom.trim()[0].toUpperCase() + nom.trim().slice(1).toLowerCase();
+
+
+const usuarisNets = usuaris.map(nom => {
+    let net = nom.trim().toLowerCase();
+    return net.charAt(0).toUpperCase() + net.slice(1);
+});
+
+console.log(usuarisNets);
+
 
     </script>
 </body>

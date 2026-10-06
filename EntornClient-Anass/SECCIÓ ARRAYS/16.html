@@ -34,12 +34,35 @@ const  autos =  [
 // autos.forEach(coche => console.log(coche));
 
 
-const marca = autos.map(coche => marca[0]);
+//solo marcas y modelo
+let marquesIModels = autos.map(auto => {
+    let dades = auto.split(",");
+    return `${dades[0].trim()} ${dades[1].trim()}`;
+});
 
-console.log(marca);
+console.log(marquesIModels);
 
 
+const color = autos.filter(auto => auto.includes("Blanco"));
+console.log(color);
 
+
+let anyo = autos.filter(auto => auto.includes("2012"));
+console.log(anyo);
+
+
+let anyoMap = autos.map(auto => auto.includes("2012"));
+console.log(anyoMap);
+if (anyo == true) {
+    console.log(anyoMap);
+}
+
+
+let Dodge = autos.some(auto => auto.includes("Dodge"));
+let Seat = autos.some(auto => auto.includes("Seat"));
+
+console.log(`Hay Dodge? ${Dodge}`); 
+console.log(`Hay Seat? ${Seat}`);   
     </script>
 </body>
 </html>

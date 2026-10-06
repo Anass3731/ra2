@@ -14,14 +14,16 @@
 
 
 
-        let pendents = tasques.filter(tasques => tasques.completada == false);
+            let pendents = tasques.filter(t => !t.completada);
 
-        for (let i = 0; i < pendents.length; i++) {
-            alert(pendents[i].nom);
-        }
+            console.log("--- TASQUES PENDENTS ---");
+            console.log(pendents);
 
+            let numCompletades = tasques.filter(t => t.completada).length;
+            let numPendents = pendents.length;
+
+            console.log(`Completades: ${numCompletades} | Pendents: ${numPendents}`);
         
-
     </script>
 </body>
 </html>

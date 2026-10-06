@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>10. Joc del dau</h3>
+    <script>
+        let dau = Math.floor(Math.random() * 6) + 1;
+
+        let usuari = parseInt(prompt("Introdueix un número entre 1 i 6:"));
+
+
+        if (usuari === dau) {
+            alert("Has guanyat!");
+        } else {
+            alert(`Has perdut, el número era ${dau}`);
+        }
+    </script>
+</body>
+</html>
